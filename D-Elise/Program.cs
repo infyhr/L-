@@ -598,7 +598,7 @@ namespace D_Elise
                             _orbwalker.SetAttack(true);
                             _spiderW.Cast();
                         }
-                        if ((!_spiderQ.IsReady() && !_spiderQ.IsReady()) || switchR)
+                        if ((!_spiderQ.IsReady() && !_spiderW.IsReady()) || switchR)
                         {
                             _r.Cast();
                         }						
@@ -656,7 +656,7 @@ namespace D_Elise
                             if (useR && _r.IsReady())
                             {
                                 _r.Cast();
-                            }							
+                            }
                         }
                 }
                 if (_config.Item("ActiveFreeze").GetValue<KeyBind>().Active)
@@ -693,6 +693,10 @@ namespace D_Elise
                             {
                                 _spiderW.Cast();
                             }
+                            if (useR && _r.IsReady())
+                            {
+                                _r.Cast();
+                            }							
                         }
                 }
             }
