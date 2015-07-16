@@ -163,7 +163,7 @@ The idea where the lines come from is that u can calculate how far they are from
             {"Draven",  new UltSpellDataS { SpellStage = 0, DamageMultiplicator = 0.7f, Width = 160f, Delay = 0400f/1000f, Speed = 2000f, Collision = false}},
             {"Ezreal",  new UltSpellDataS { SpellStage = 0, DamageMultiplicator = 0.7f, Width = 160f, Delay = 1000f/1000f, Speed = 2000f, Collision = false}},
             {"Karthus", new UltSpellDataS { SpellStage = 0, DamageMultiplicator = 0.9f, Width = 000f, Delay = 3125f/1000f, Speed = 0000f, Collision = false}},
-			{"GangPlank", new UltSpellDataS { SpellStage = 0, DamageMultiplicator = 0.5f, Width = 600f, Delay = 0100f/1000f, Speed = 0000f, Collision = false}}
+			{"GangPlank", new UltSpellDataS { SpellStage = 0, DamageMultiplicator = 2.0f, Width = 600f, Delay = 0100f/1000f, Speed = 0000f, Collision = false}} //2 waves
         };
 
         bool CanUseUlt(Obj_AI_Hero hero) //use for allies when fixed: champ.Spellbook.GetSpell(SpellSlot.R) = Ready
