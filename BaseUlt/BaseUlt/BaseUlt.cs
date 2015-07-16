@@ -32,14 +32,11 @@ The idea where the lines come from is that u can calculate how far they are from
         Menu Menu;
         Menu TeamUlt;
         Menu DisabledChampions;
-
-        public static Spell R;
+        
         Spell Ultimate;
         int LastUltCastT;
         
         Utility.Map.MapType Map;
-
-        private static Obj_AI_Hero Player = ObjectManager.Player;
 
         List<Obj_AI_Hero> Heroes;
         List<Obj_AI_Hero> Enemies;
@@ -114,7 +111,7 @@ The idea where the lines come from is that u can calculate how far they are from
             if (compatibleChamp)
                 Game.OnUpdate += Game_OnUpdate;
 
-            ShowNotification("BaseUlt3 by Beaving (Fixed by Berb) - Loaded", NotificationColor, 3000);
+            ShowNotification("BaseUlt3 by Beaving - Loaded", NotificationColor, 3000);
         }
 
         public void ShowNotification(string message, System.Drawing.Color color, int duration = -1, bool dispose = true)
@@ -160,28 +157,30 @@ The idea where the lines come from is that u can calculate how far they are from
 
         Dictionary<String, UltSpellDataS> UltSpellData = new Dictionary<string, UltSpellDataS>
         {
-            {"Jinx",    new UltSpellDataS { SpellStage = 1, DamageMultiplicator = 0.8f, Width = 140f, Delay = 0600f/1000f, Speed = 1700f, Collision = true}},
+            {"Jinx",    new UltSpellDataS { SpellStage = 1, DamageMultiplicator = 1.0f, Width = 140f, Delay = 0600f/1000f, Speed = 1700f, Collision = true}},
             {"Ashe",    new UltSpellDataS { SpellStage = 0, DamageMultiplicator = 1.0f, Width = 130f, Delay = 0250f/1000f, Speed = 1600f, Collision = true}},
-            {"Draven",  new UltSpellDataS { SpellStage = 0, DamageMultiplicator = 0.7f, Width = 160f, Delay = 0400f/1000f, Speed = 2000f, Collision = false}},
+            {"Draven",  new UltSpellDataS { SpellStage = 0, DamageMultiplicator = 0.7f, Width = 160f, Delay = 0400f/1000f, Speed = 2000f, Collision = true}},
             {"Ezreal",  new UltSpellDataS { SpellStage = 0, DamageMultiplicator = 0.7f, Width = 160f, Delay = 1000f/1000f, Speed = 2000f, Collision = false}},
             {"Karthus", new UltSpellDataS { SpellStage = 0, DamageMultiplicator = 1.0f, Width = 000f, Delay = 3125f/1000f, Speed = 0000f, Collision = false}}
         };
 
         bool CanUseUlt(Obj_AI_Hero hero) //use for allies when fixed: champ.Spellbook.GetSpell(SpellSlot.R) = Ready
         {
-            return hero.Spellbook.CanUseSpell(SpellSlot.R) == SpellState.Ready || (hero.Spellbook.GetSpell(SpellSlot.R).Level > 0 && hero.Spellbook.CanUseSpell(SpellSlot.R) == SpellState.Surpressed && hero.Mana >= hero.Spellbook.GetSpell(SpellSlot.R).ManaCost);
+            return hero.Spellbook.CanUseSpell(SpellSlot.R) == SpellState.Ready || 
+                (hero.Spellbook.GetSpell(SpellSlot.R).Level > 0 && hero.Spellbook.CanUseSpell(SpellSlot.R) == SpellState.Surpressed && hero.Mana >= hero.Spellbook.GetSpell(SpellSlot.R).ManaCost);
         }
 
         void HandleUltTarget(EnemyInfo enemyInfo)
         {
             bool ultNow = false;
             bool me = false;
-			foreach (Obj_AI_Hero champ in Allies.Where(x => //gathering the damage from allies should probably be done once only with timers
-				x.IsValid<Obj_AI_Hero>() &&
-				!x.IsDead && 
-				((x.IsMe && !x.IsStunned) || TeamUlt.Items.Any(item => item.GetValue<bool>() && item.Name == x.ChampionName)) &&
-				CanUseUlt(x)))
-			{
+
+            foreach (Obj_AI_Hero champ in Allies.Where(x => //gathering the damage from allies should probably be done once only with timers
+                            x.IsValid<Obj_AI_Hero>() &&
+                            !x.IsDead && 
+                            ((x.IsMe && !x.IsStunned) || TeamUlt.Items.Any(item => item.GetValue<bool>() && item.Name == x.ChampionName)) &&
+                            CanUseUlt(x)))
+            {
                 if (Menu.Item("checkCollision").GetValue<bool>() && UltSpellData[champ.ChampionName].Collision && IsCollidingWithChamps(champ, EnemySpawnPos, UltSpellData[champ.ChampionName].Width))
                 {
                     enemyInfo.RecallInfo.IncomingDamage[champ.NetworkId] = 0;
@@ -212,7 +211,7 @@ The idea where the lines come from is that u can calculate how far they are from
 
             if(me)
             {
-                if (!IsTargetKillable(enemyInfo))
+                if(!IsTargetKillable(enemyInfo))
                 {
                     enemyInfo.RecallInfo.LockedTarget = false;
                     return;
@@ -233,6 +232,10 @@ The idea where the lines come from is that u can calculate how far they are from
             }
         }
 
+		private static Obj_AI_Hero Player = ObjectManager.Player;
+		
+		public static Spell R;
+		
         bool IsTargetKillable(EnemyInfo enemyInfo)
         {
             //float totalUltDamage = enemyInfo.RecallInfo.IncomingDamage.Values.Sum(); //Needs fixing
@@ -269,15 +272,9 @@ The idea where the lines come from is that u can calculate how far they are from
             if (source.ChampionName == "Karthus")
                 return delay * 1000;
 
-            float distance = source.ServerPosition.Distance(targetpos);
+            float distance = Vector3.Distance(source.ServerPosition, targetpos);
 
             float missilespeed = speed;
-
-            // Credits to Soresu for distance
-            if (source.ChampionName == "Ezreal")
-            {
-                missilespeed = (distance / 2000) * 1000 + 1000;
-            }
 
             if(source.ChampionName == "Jinx" && distance > 1350)
             {
@@ -467,7 +464,7 @@ The idea where the lines come from is that u can calculate how far they are from
         {
             EnemyInfo = enemyInfo;
             Recall = new Packet.S2C.Teleport.Struct(EnemyInfo.Player.NetworkId, Packet.S2C.Teleport.Status.Unknown, Packet.S2C.Teleport.Type.Unknown, 0);
-            IncomingDamage = new Dictionary<int, float>();
+            IncomingDamage = new Dictionary<int, float>(); 
         }
 
         public bool ShouldDraw()
