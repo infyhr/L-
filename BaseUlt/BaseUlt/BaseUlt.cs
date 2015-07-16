@@ -111,7 +111,7 @@ The idea where the lines come from is that u can calculate how far they are from
             if (compatibleChamp)
                 Game.OnUpdate += Game_OnUpdate;
 
-            ShowNotification("BaseUlt3 by Beaving - Loaded debug", NotificationColor, 3000);
+            ShowNotification("BaseUlt3 by Beaving - Loaded", NotificationColor, 3000);
         }
 
         public void ShowNotification(string message, System.Drawing.Color color, int duration = -1, bool dispose = true)
@@ -238,20 +238,18 @@ The idea where the lines come from is that u can calculate how far they are from
 		
         bool IsTargetKillable(EnemyInfo enemyInfo)
         {
-            //float totalUltDamage = enemyInfo.RecallInfo.IncomingDamage.Values.Sum(); //Needs fixing
-
-            var dmg = R.GetDamage(Player);
+            float totalUltDamage = enemyInfo.RecallInfo.IncomingDamage.Values.Sum(); //Needs fixing
 
             float targetHealth = GetTargetHealth(enemyInfo, enemyInfo.RecallInfo.GetRecallCountdown());
 
             if (Environment.TickCount - enemyInfo.LastSeen > 20000 && !Menu.Item("regardlessKey").GetValue<KeyBind>().Active)
             {
                 //if (totalUltDamage < enemyInfo.Player.MaxHealth)
-                if (dmg < enemyInfo.Player.MaxHealth)
+                if (totalUltDamage < enemyInfo.Player.MaxHealth)
                     return false;
             }
             //else if (totalUltDamage < targetHealth)
-            else if (dmg < targetHealth)
+            else if (totalUltDamage < targetHealth)
                 return false;
 
             return true;
