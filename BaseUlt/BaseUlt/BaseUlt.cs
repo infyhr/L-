@@ -111,7 +111,7 @@ The idea where the lines come from is that u can calculate how far they are from
             if (compatibleChamp)
                 Game.OnUpdate += Game_OnUpdate;
 
-            ShowNotification("BaseUlt3 by Beaving - Loaded", NotificationColor, 3000);
+            ShowNotification("BaseUlt3 by Beaving - Loaded debug", NotificationColor, 3000);
         }
 
         public void ShowNotification(string message, System.Drawing.Color color, int duration = -1, bool dispose = true)
