@@ -192,6 +192,7 @@ The idea where the lines come from is that u can calculate how far they are from
 
                 if (enemyInfo.RecallInfo.GetRecallCountdown() >= timeneeded)
                     enemyInfo.RecallInfo.IncomingDamage[champ.NetworkId] = (float)champ.GetSpellDamage(enemyInfo.Player, SpellSlot.R, UltSpellData[champ.ChampionName].SpellStage) * UltSpellData[champ.ChampionName].DamageMultiplicator;
+
                 else if (enemyInfo.RecallInfo.GetRecallCountdown() < timeneeded - (champ.IsMe ? 0 : 125)) //some buffer for allies so their damage isnt getting reset
                 {
                     enemyInfo.RecallInfo.IncomingDamage[champ.NetworkId] = 0;
@@ -221,8 +222,12 @@ The idea where the lines come from is that u can calculate how far they are from
 
                 if (!ultNow || Menu.Item("panicKey").GetValue<KeyBind>().Active)
                     return;
-
-                Ultimate.Cast(EnemySpawnPos, true);
+                if (ObjectManager.Player.ChampionName == "Ezreal")
+                {
+                    Ultimate.Cast(EnemySpawnPos);
+                } else {
+                    Ultimate.Cast(EnemySpawnPos, true);
+                }
                 LastUltCastT = Environment.TickCount;
             }
             else
@@ -231,10 +236,6 @@ The idea where the lines come from is that u can calculate how far they are from
                 enemyInfo.RecallInfo.EstimatedShootT = 0;
             }
         }
-
-		private static Obj_AI_Hero Player = ObjectManager.Player;
-		
-		public static Spell R;
 		
         bool IsTargetKillable(EnemyInfo enemyInfo)
         {
