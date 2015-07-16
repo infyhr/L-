@@ -157,9 +157,9 @@ The idea where the lines come from is that u can calculate how far they are from
 
         Dictionary<String, UltSpellDataS> UltSpellData = new Dictionary<string, UltSpellDataS>
         {
-            {"Jinx",    new UltSpellDataS { SpellStage = 1, DamageMultiplicator = 0.9f, Width = 140f, Delay = 0600f/1000f, Speed = 1700f, Collision = true}},
+            {"Jinx",    new UltSpellDataS { SpellStage = 1, DamageMultiplicator = 0.8f, Width = 140f, Delay = 0600f/1000f, Speed = 1700f, Collision = true}},
             {"Ashe",    new UltSpellDataS { SpellStage = 0, DamageMultiplicator = 1.0f, Width = 130f, Delay = 0250f/1000f, Speed = 1600f, Collision = true}},
-            {"Draven",  new UltSpellDataS { SpellStage = 0, DamageMultiplicator = 0.7f, Width = 160f, Delay = 0400f/1000f, Speed = 2000f, Collision = true}},
+            {"Draven",  new UltSpellDataS { SpellStage = 0, DamageMultiplicator = 0.7f, Width = 160f, Delay = 0400f/1000f, Speed = 2000f, Collision = false}},
             {"Ezreal",  new UltSpellDataS { SpellStage = 0, DamageMultiplicator = 0.7f, Width = 160f, Delay = 1000f/1000f, Speed = 2000f, Collision = false}},
             {"Karthus", new UltSpellDataS { SpellStage = 0, DamageMultiplicator = 1.0f, Width = 000f, Delay = 3125f/1000f, Speed = 0000f, Collision = false}}
         };
@@ -244,11 +244,9 @@ The idea where the lines come from is that u can calculate how far they are from
 
             if (Environment.TickCount - enemyInfo.LastSeen > 20000 && !Menu.Item("regardlessKey").GetValue<KeyBind>().Active)
             {
-                //if (totalUltDamage < enemyInfo.Player.MaxHealth)
                 if (totalUltDamage < enemyInfo.Player.MaxHealth)
                     return false;
             }
-            //else if (totalUltDamage < targetHealth)
             else if (totalUltDamage < targetHealth)
                 return false;
 
