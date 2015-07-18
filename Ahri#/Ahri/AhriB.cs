@@ -28,7 +28,6 @@ namespace AhriB
         public static void OnGameLoad(EventArgs args)
         {
             if (Hero.ChampionName != "Ahri")
-                Notifications.AddNotification(new Notification("This champ is not support!", 4000));
                 return;
 
             new Ability();
