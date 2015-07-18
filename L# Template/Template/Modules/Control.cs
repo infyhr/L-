@@ -104,14 +104,14 @@ namespace Template.Modules
             Link("Neutral:Key", Neutral.AddLinkedKeyBind("JungleClear active", 'V', KeyBindType.Press));
 
             var Flee = Settings.MainMenu.AddSubMenu("Flee");
-            Link("Flee:Q", Flee.AddLinkedBool("Use Q on closest enemy"));
-			Link("Flee:W", Flee.AddLinkedBool("Use W on closest enemy"));
-			Link("Flee:E", Flee.AddLinkedBool("Use E on closest enemy"));
-			Link("Flee:R", Flee.AddLinkedBool("Use R on closest enemy"));
-            Link("Flee:Q", Flee.AddLinkedBool("Use Q for speed boost"));
-			Link("Flee:W", Flee.AddLinkedBool("Use W for speed boost"));
-			Link("Flee:E", Flee.AddLinkedBool("Use E for speed boost"));
-			Link("Flee:R", Flee.AddLinkedBool("Use R for speed boost"));
+            Link("Flee:QCE", Flee.AddLinkedBool("Use Q on closest enemy"));
+			Link("Flee:WCE", Flee.AddLinkedBool("Use W on closest enemy"));
+			Link("Flee:ECE", Flee.AddLinkedBool("Use E on closest enemy"));
+			Link("Flee:RCE", Flee.AddLinkedBool("Use R on closest enemy"));
+            Link("Flee:QSP", Flee.AddLinkedBool("Use Q for speed boost"));
+			Link("Flee:WSP", Flee.AddLinkedBool("Use W for speed boost"));
+			Link("Flee:ESP", Flee.AddLinkedBool("Use E for speed boost"));
+			Link("Flee:RSP", Flee.AddLinkedBool("Use R for speed boost"));
             Link("Flee:Key", Flee.AddLinkedKeyBind("Flee active", 'T', KeyBindType.Press));
 
             // Misc
