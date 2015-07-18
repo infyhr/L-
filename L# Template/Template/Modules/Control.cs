@@ -9,7 +9,7 @@ namespace Template.Modules
     {
         public static readonly Obj_AI_Hero Hero = ObjectManager.Player;
 
-        protected static string MenuLabel = Hero.ChampionName + "# -" + Versija;
+        protected static string MenuLabel = Hero.ChampionName + "# - v" + Versija;
         protected static MenuWrapper Settings;
 
         protected static Dictionary<string, MenuWrapper.BoolLink> Bools = new Dictionary<string, MenuWrapper.BoolLink>();
