@@ -7,7 +7,7 @@ namespace Template.Modules
 {
     internal class Control : Template
     {
-        protected static string MenuLabel = "Vanguard# - Template";
+        protected static string MenuLabel = "Champ# - Template";
         protected static MenuWrapper Settings;
 
         protected static Dictionary<string, MenuWrapper.BoolLink> Bools = new Dictionary<string, MenuWrapper.BoolLink>();
