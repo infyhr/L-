@@ -3,9 +3,9 @@ using System.Linq;
 using LeagueSharp;
 using LeagueSharp.Common;
 
-namespace Ahri.Modules
+namespace AhriB.Modules
 {
-    internal class Control : Ahri
+    internal class Control : AhriB
     {
         public static readonly Obj_AI_Hero Hero = ObjectManager.Player;
 
@@ -136,12 +136,12 @@ namespace Ahri.Modules
             }
         }
 
-        internal static bool IsActive(Ahri action)
+        internal static bool IsActive(AhriB action)
         {
             return Key[action.GetType().Name + ":Key"].Value.Active;
         }
 
-        internal static bool IsEnabled(Ahri action, Spell spell)
+        internal static bool IsEnabled(AhriB action, Spell spell)
         {
             return Bool[action.GetType().Name + ":" + spell.Slot].Value && spell.IsReady();
         }

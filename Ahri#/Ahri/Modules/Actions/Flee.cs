@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using LeagueSharp;
 using LeagueSharp.Common;
 
-namespace Ahri.Modules.Actions
+namespace AhriB.Modules.Actions
 {
-    internal class Flee : Ahri
+    internal class Flee : AhriB
     {
         public Flee()
         {

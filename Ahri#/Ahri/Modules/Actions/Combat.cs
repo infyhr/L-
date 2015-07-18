@@ -1,9 +1,9 @@
 ﻿using LeagueSharp;
 using LeagueSharp.Common;
 
-namespace Ahri.Modules.Actions
+namespace AhriB.Modules.Actions
 {
-    internal class Combat : Ahri
+    internal class Combat : AhriB
     {
         public Combat()
         {

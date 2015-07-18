@@ -7,8 +7,8 @@
     <ProjectGuid>{8A142C3D-EAF0-49D5-99AF-A80E2E5074BB}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ahri</RootNamespace>
-    <AssemblyName>VanguardAhri</AssemblyName>
+    <RootNamespace>AhriB</RootNamespace>
+    <AssemblyName>VanguardAhriB</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <PreBuildEvent />
@@ -88,7 +88,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Ahri.cs" />
+    <Compile Include="AhriB.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Modules\Ability.cs" />

@@ -9,13 +9,13 @@ using LeagueSharp.Common;
  * Credits to Avenguard for this Template!
  */ 
 
-namespace Ahri
+namespace AhriB
 {
     class Program
     {
         private static void Main(string[] args)
         {
-            CustomEvents.Game.OnGameLoad += Ahri.OnGameLoad;
+            CustomEvents.Game.OnGameLoad += AhriB.OnGameLoad;
         }
     }
 }

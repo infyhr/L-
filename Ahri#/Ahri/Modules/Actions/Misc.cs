@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using LeagueSharp;
 using LeagueSharp.Common;
 
-namespace Ahri.Modules.Actions
+namespace AhriB.Modules.Actions
 {
-    internal class Misc : Ahri
+    internal class Misc : AhriB
     {
         public Misc()
         {

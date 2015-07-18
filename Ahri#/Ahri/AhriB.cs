@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Reflection;
 using System.Timers;
-using Ahri.Modules;
-using Ahri.Modules.Actions;
 using LeagueSharp;
 using LeagueSharp.Common;
+using AhriB.Modules;
+using AhriB.Modules.Actions;
 
-namespace Ahri
+namespace AhriB
 {
-    internal abstract class Ahri
+    internal abstract class AhriB
     {
         public static readonly Obj_AI_Hero Hero = ObjectManager.Player;
 
@@ -22,7 +22,7 @@ namespace Ahri
 
         public static System.Version Versija 
         {
-            get { return Assembly.GetAssembly(typeof(Ahri)).GetName().Version; }
+            get { return Assembly.GetAssembly(typeof(AhriB)).GetName().Version; }
         }
 
         public static void OnGameLoad(EventArgs args)

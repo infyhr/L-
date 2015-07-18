@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using LeagueSharp.Common;
 
-namespace Ahri.Modules.Actions
+namespace AhriB.Modules.Actions
 {
-    internal class Neutral : Ahri
+    internal class Neutral : AhriB
     {
         public Neutral()
         {

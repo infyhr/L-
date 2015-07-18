@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using LeagueSharp.Common;
 
-namespace Ahri.Modules.Actions
+namespace AhriB.Modules.Actions
 {
-    internal class Pushing : Ahri
+    internal class Pushing : AhriB
     {
         public Pushing()
         {
