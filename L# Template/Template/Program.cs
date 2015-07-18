@@ -5,6 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using LeagueSharp.Common;
 
+/**
+ * Credits to Avenguard for this template!
+ */ 
+
 namespace Template
 {
     class Program

@@ -32,7 +32,7 @@ namespace Template
 
             new Ability();
             new Control();
-            Notifications.AddNotification(new Notification("Template v" + Versija, 4000));
+            Notifications.AddNotification(new Notification(Hero.ChampionName + " v" + Versija +" by Berb", 4000));
             Game.OnUpdate += OnGameUpdate;
         }
 
