@@ -7,7 +7,9 @@ namespace Template.Modules
 {
     internal class Control : Template
     {
-        protected static string MenuLabel = "Champ# - Template";
+        public static readonly Obj_AI_Hero Hero = ObjectManager.Player;
+
+        protected static string MenuLabel = Hero.Name + "# -" + Versija;
         protected static MenuWrapper Settings;
 
         protected static Dictionary<string, MenuWrapper.BoolLink> Bools = new Dictionary<string, MenuWrapper.BoolLink>();
@@ -89,37 +91,44 @@ namespace Template.Modules
             Link("Pushing:Key", Pushing.AddLinkedKeyBind("Pushing Key", 'V', KeyBindType.Press));
             #endregion
 
+            #region Freeze settings
             var Freeze = Settings.MainMenu.AddSubMenu("Lane Freeze");
             Link("Freeze:Q", Freeze.AddLinkedBool("Last hit with Q", false));
 			Link("Freeze:W", Freeze.AddLinkedBool("Last hit with W"));
             Link("Freeze:E", Freeze.AddLinkedBool("Last hit with E"));
 			Link("Freeze:R", Freeze.AddLinkedBool("Last hit with R"));
             Link("Freeze:Key", Freeze.AddLinkedKeyBind("Lane freeze key", 'X', KeyBindType.Press));
+            #endregion
 
+            #region Jungle Clear Settings
             var Neutral = Settings.MainMenu.AddSubMenu("Jungle Clear");
             Link("Neutral:Q", Neutral.AddLinkedBool("Use Q"));
             Link("Neutral:W", Neutral.AddLinkedBool("Use W"));
             Link("Neutral:E", Neutral.AddLinkedBool("Use E"));
-			Link("Neutral:R", Neutral.AddLinkedBool("Use R"));
-            Link("Neutral:Key", Neutral.AddLinkedKeyBind("JungleClear active", 'V', KeyBindType.Press));
+            Link("Neutral:R", Neutral.AddLinkedBool("Use R"));
+            Link("Neutral:Key", Neutral.AddLinkedKeyBind("JungleClear active", 'V', KeyBindType.Press)); 
+            #endregion
 
+            #region Flee Settings
             var Flee = Settings.MainMenu.AddSubMenu("Flee");
             Link("Flee:QCE", Flee.AddLinkedBool("Use Q on closest enemy"));
-			Link("Flee:WCE", Flee.AddLinkedBool("Use W on closest enemy"));
-			Link("Flee:ECE", Flee.AddLinkedBool("Use E on closest enemy"));
-			Link("Flee:RCE", Flee.AddLinkedBool("Use R on closest enemy"));
+            Link("Flee:WCE", Flee.AddLinkedBool("Use W on closest enemy"));
+            Link("Flee:ECE", Flee.AddLinkedBool("Use E on closest enemy"));
+            Link("Flee:RCE", Flee.AddLinkedBool("Use R on closest enemy"));
             Link("Flee:QSP", Flee.AddLinkedBool("Use Q for speed boost"));
-			Link("Flee:WSP", Flee.AddLinkedBool("Use W for speed boost"));
-			Link("Flee:ESP", Flee.AddLinkedBool("Use E for speed boost"));
-			Link("Flee:RSP", Flee.AddLinkedBool("Use R for speed boost"));
-            Link("Flee:Key", Flee.AddLinkedKeyBind("Flee active", 'T', KeyBindType.Press));
+            Link("Flee:WSP", Flee.AddLinkedBool("Use W for speed boost"));
+            Link("Flee:ESP", Flee.AddLinkedBool("Use E for speed boost"));
+            Link("Flee:RSP", Flee.AddLinkedBool("Use R for speed boost"));
+            Link("Flee:Key", Flee.AddLinkedKeyBind("Flee active", 'T', KeyBindType.Press)); 
+            #endregion
 
-            // Misc
+            #region Misc. Settings
             var MiscMenu = Settings.MainMenu.AddSubMenu("Misc");
-			Link("AutomaticQ", MiscMenu.AddLinkedBool("Auto Q when enemy in range", false));
-			Link("AutomaticW", MiscMenu.AddLinkedBool("Auto W when enemy in range", false));
-			Link("AutomaticE", MiscMenu.AddLinkedBool("Auto E when enemy in range", false));
-            Link("AutomaticR", MiscMenu.AddLinkedBool("Auto R when enemy in range", false));
+            Link("AutomaticQ", MiscMenu.AddLinkedBool("Auto Q when enemy in range", false));
+            Link("AutomaticW", MiscMenu.AddLinkedBool("Auto W when enemy in range", false));
+            Link("AutomaticE", MiscMenu.AddLinkedBool("Auto E when enemy in range", false));
+            Link("AutomaticR", MiscMenu.AddLinkedBool("Auto R when enemy in range", false)); 
+            #endregion
         }
 
         internal static bool UseIgnite

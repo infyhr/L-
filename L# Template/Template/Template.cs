@@ -20,7 +20,7 @@ namespace Template
 
         public static int MiscTick = 0;
 
-        private static System.Version Versija 
+        public static System.Version Versija 
         {
             get { return Assembly.GetAssembly(typeof(Template)).GetName().Version; }
         }
