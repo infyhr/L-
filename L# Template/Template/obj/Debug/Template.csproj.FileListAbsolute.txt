@@ -1,0 +1,10 @@
+C:\Users\Danny\Desktop\Github\L-\L# Template\Template\bin\Release\VanguardTemplate.exe.config
+C:\Users\Danny\Desktop\Github\L-\L# Template\Template\obj\Debug\Template.csprojResolveAssemblyReference.cache
+C:\Users\Danny\Desktop\Github\L-\L# Template\Template\bin\Release\VanguardTemplate.exe
+C:\Users\Danny\Desktop\Github\L-\L# Template\Template\bin\Release\VanguardTemplate.pdb
+C:\Users\Danny\Desktop\Github\L-\L# Template\Template\bin\Release\LeagueSharp.Common.dll
+C:\Users\Danny\Desktop\Github\L-\L# Template\Template\bin\Release\LeagueSharp.dll
+C:\Users\Danny\Desktop\Github\L-\L# Template\Template\bin\Release\SharpDX.dll
+C:\Users\Danny\Desktop\Github\L-\L# Template\Template\bin\Release\SharpDX.Direct3D9.dll
+C:\Users\Danny\Desktop\Github\L-\L# Template\Template\obj\Debug\VanguardTemplate.exe
+C:\Users\Danny\Desktop\Github\L-\L# Template\Template\obj\Debug\VanguardTemplate.pdb
