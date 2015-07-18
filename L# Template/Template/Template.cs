@@ -27,8 +27,8 @@ namespace Template
 
         public static void OnGameLoad(EventArgs args)
         {
-            if (Hero.ChampionName != "Champ Name")
-                return;
+            //if (Hero.ChampionName != "Champ Name")
+                //return;
 
             new Ability();
             new Control();
