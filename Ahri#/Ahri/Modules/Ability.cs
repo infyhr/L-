@@ -13,10 +13,5 @@ namespace AhriB.Modules
             SpellR = new Spell(SpellSlot.R, 0);
             Ignite = Hero.GetSpellSlot("summonerdot");
         }
-
-        internal static int CurrentRange
-        {
-            get { return Hero.HasBuff("JudicatorRighteousFury") ? 525 : 125; }
-        }
     }
 }

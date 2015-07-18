@@ -7,8 +7,6 @@ namespace AhriB.Modules
 {
     internal class Control : AhriB
     {
-        public static readonly Obj_AI_Hero Hero = ObjectManager.Player;
-
         protected static string MenuLabel = Hero.ChampionName + "# - v" + Versija;
         protected static MenuWrapper Settings;
 
