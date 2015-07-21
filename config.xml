@@ -334,7 +334,7 @@
       <LeagueSharpAssembly>
         <InstallChecked>true</InstallChecked>
         <InjectChecked>false</InjectChecked>
-        <Status>Ready</Status>
+        <Status>CompilingError</Status>
         <DisplayName>[Util] | NabbCleanser</DisplayName>
         <Name>NabbCleanser</Name>
         <Description />
@@ -369,7 +369,7 @@
       </LeagueSharpAssembly>
       <LeagueSharpAssembly>
         <InstallChecked>true</InstallChecked>
-        <InjectChecked>true</InjectChecked>
+        <InjectChecked>false</InjectChecked>
         <Status>Ready</Status>
         <DisplayName>[Util] | SFXUtility (Tracker/Awareness/Activator)</DisplayName>
         <Name>SFXUtility</Name>
@@ -384,6 +384,15 @@
         <Name>Shared Experience</Name>
         <Description />
         <SvnUrl>https://github.com/AlphaGodLoL/LeagueSharp</SvnUrl>
+      </LeagueSharpAssembly>
+      <LeagueSharpAssembly>
+        <InstallChecked>true</InstallChecked>
+        <InjectChecked>false</InjectChecked>
+        <Status>Ready</Status>
+        <DisplayName>[Util] | SivirHelper</DisplayName>
+        <Name>SivirHelper</Name>
+        <Description />
+        <SvnUrl>https://github.com/xKurisu/KurisuSolutions</SvnUrl>
       </LeagueSharpAssembly>
       <LeagueSharpAssembly>
         <InstallChecked>true</InstallChecked>
@@ -447,6 +456,15 @@
         <Name>UniversalPings</Name>
         <Description />
         <SvnUrl>https://github.com/TheSaltyWaffle/LeagueSharp</SvnUrl>
+      </LeagueSharpAssembly>
+      <LeagueSharpAssembly>
+        <InstallChecked>true</InstallChecked>
+        <InjectChecked>false</InjectChecked>
+        <Status>Ready</Status>
+        <DisplayName>[Util] | Wind-Up Helper</DisplayName>
+        <Name>Wind-Up Helper</Name>
+        <Description />
+        <SvnUrl>https://github.com/SwipeDan/LeagueSharp</SvnUrl>
       </LeagueSharpAssembly>
       <LeagueSharpAssembly>
         <InstallChecked>true</InstallChecked>
@@ -740,19 +758,19 @@
         <InstallChecked>true</InstallChecked>
         <InjectChecked>false</InjectChecked>
         <Status>Ready</Status>
-        <DisplayName>Brand - yol0</DisplayName>
-        <Name>yol0Brand</Name>
+        <DisplayName>Caitlyn - Hikigaya</DisplayName>
+        <Name>HikiCarry Caitlyn</Name>
         <Description />
-        <SvnUrl>https://github.com/yol0swag/LeagueSharp</SvnUrl>
+        <SvnUrl>https://github.com/HikigayaAss/LeagueSharp</SvnUrl>
       </LeagueSharpAssembly>
       <LeagueSharpAssembly>
         <InstallChecked>true</InstallChecked>
         <InjectChecked>false</InjectChecked>
         <Status>Ready</Status>
-        <DisplayName>Caitlyn - Hikigaya</DisplayName>
-        <Name>HikiCarry Caitlyn</Name>
+        <DisplayName>Brand - yol0</DisplayName>
+        <Name>yol0Brand</Name>
         <Description />
-        <SvnUrl>https://github.com/HikigayaAss/LeagueSharp</SvnUrl>
+        <SvnUrl>https://github.com/yol0swag/LeagueSharp</SvnUrl>
       </LeagueSharpAssembly>
       <LeagueSharpAssembly>
         <InstallChecked>true</InstallChecked>
@@ -1091,6 +1109,15 @@
         <InstallChecked>true</InstallChecked>
         <InjectChecked>false</InjectChecked>
         <Status>Ready</Status>
+        <DisplayName>Galio - Kortatu (Honda7)</DisplayName>
+        <Name>GalioSharp</Name>
+        <Description />
+        <SvnUrl>https://github.com/TC-Crew/L-Assemblies/</SvnUrl>
+      </LeagueSharpAssembly>
+      <LeagueSharpAssembly>
+        <InstallChecked>true</InstallChecked>
+        <InjectChecked>false</InjectChecked>
+        <Status>Ready</Status>
         <DisplayName>Gangplank - Danz</DisplayName>
         <Name>GangPlank - Yarr!</Name>
         <Description />
@@ -1307,7 +1334,7 @@
         <InstallChecked>true</InstallChecked>
         <InjectChecked>false</InjectChecked>
         <Status>Ready</Status>
-        <DisplayName>Jinx - Asuna</DisplayName>
+        <DisplayName>Jinx - Asuna (Berb)</DisplayName>
         <Name>PennyJinxReborn</Name>
         <Description />
         <SvnUrl>https://github.com/DZ191/LeagueSharp</SvnUrl>
@@ -1352,7 +1379,7 @@
         <InstallChecked>true</InstallChecked>
         <InjectChecked>false</InjectChecked>
         <Status>Ready</Status>
-        <DisplayName>Kalista - jQuery</DisplayName>
+        <DisplayName>Kalista - jQuery (Berb)</DisplayName>
         <Name>ElKalista</Name>
         <Description />
         <SvnUrl>https://github.com/AlterEgojQuery/ElBundle</SvnUrl>
@@ -1689,6 +1716,15 @@
         <Name>DevLulu</Name>
         <Description />
         <SvnUrl>https://github.com/InjectionDev/LeagueSharp</SvnUrl>
+      </LeagueSharpAssembly>
+      <LeagueSharpAssembly>
+        <InstallChecked>true</InstallChecked>
+        <InjectChecked>false</InjectChecked>
+        <Status>Ready</Status>
+        <DisplayName>Lulu - iMeh</DisplayName>
+        <Name>Lulu</Name>
+        <Description />
+        <SvnUrl>https://github.com/Esk0r/LeagueSharp</SvnUrl>
       </LeagueSharpAssembly>
       <LeagueSharpAssembly>
         <InstallChecked>true</InstallChecked>
@@ -2072,7 +2108,7 @@
         <InstallChecked>true</InstallChecked>
         <InjectChecked>false</InjectChecked>
         <Status>Ready</Status>
-        <DisplayName>Riven - Kurisu</DisplayName>
+        <DisplayName>Riven - Kurisu (Berb)</DisplayName>
         <Name>KurisuRiven</Name>
         <Description />
         <SvnUrl>https://github.com/xKurisu/KurisuSolutions</SvnUrl>
@@ -2085,6 +2121,15 @@
         <Name>EloFactory_Riven</Name>
         <Description />
         <SvnUrl>https://github.com/EloFactory/LeagueSharp</SvnUrl>
+      </LeagueSharpAssembly>
+      <LeagueSharpAssembly>
+        <InstallChecked>true</InstallChecked>
+        <InjectChecked>false</InjectChecked>
+        <Status>Ready</Status>
+        <DisplayName>Ryze - Badao</DisplayName>
+        <Name>HeavenStrikeRyze</Name>
+        <Description />
+        <SvnUrl>https://github.com/badao/HeavenStrikeRyze</SvnUrl>
       </LeagueSharpAssembly>
       <LeagueSharpAssembly>
         <InstallChecked>true</InstallChecked>
@@ -2184,6 +2229,15 @@
         <Name>Sion</Name>
         <Description />
         <SvnUrl>https://github.com/TC-Crew/L-Assemblies</SvnUrl>
+      </LeagueSharpAssembly>
+      <LeagueSharpAssembly>
+        <InstallChecked>true</InstallChecked>
+        <InjectChecked>false</InjectChecked>
+        <Status>Ready</Status>
+        <DisplayName>Sivir - GnomexFire</DisplayName>
+        <Name>Sivir Kappa</Name>
+        <Description />
+        <SvnUrl>https://github.com/Gnomexfire/Sharp</SvnUrl>
       </LeagueSharpAssembly>
       <LeagueSharpAssembly>
         <InstallChecked>true</InstallChecked>
@@ -2522,7 +2576,7 @@
         <InstallChecked>true</InstallChecked>
         <InjectChecked>false</InjectChecked>
         <Status>Ready</Status>
-        <DisplayName>Vayne - Asuna</DisplayName>
+        <DisplayName>Vayne - Asuna (Berb)</DisplayName>
         <Name>VayneHunter Reborn</Name>
         <Description />
         <SvnUrl>https://github.com/DZ191/LeagueSharp</SvnUrl>
@@ -2542,6 +2596,15 @@
         <Status>Ready</Status>
         <DisplayName>Vayne - Hikigaya</DisplayName>
         <Name>HikiCarry Vayne</Name>
+        <Description />
+        <SvnUrl>https://github.com/HikigayaAss/LeagueSharp</SvnUrl>
+      </LeagueSharpAssembly>
+      <LeagueSharpAssembly>
+        <InstallChecked>true</InstallChecked>
+        <InjectChecked>false</InjectChecked>
+        <Status>Ready</Status>
+        <DisplayName>Vayne - Hikigaya (MasterRace)</DisplayName>
+        <Name>HikiCarry Vayne Masterrace</Name>
         <Description />
         <SvnUrl>https://github.com/HikigayaAss/LeagueSharp</SvnUrl>
       </LeagueSharpAssembly>
@@ -3085,7 +3148,7 @@
         <LeagueSharpAssembly>
           <InstallChecked>true</InstallChecked>
           <InjectChecked>false</InjectChecked>
-          <Status>Ready</Status>
+          <Status>CompilingError</Status>
           <DisplayName>[Util] | NabbCleanser</DisplayName>
           <Name>NabbCleanser</Name>
           <Description />
@@ -3120,7 +3183,7 @@
         </LeagueSharpAssembly>
         <LeagueSharpAssembly>
           <InstallChecked>true</InstallChecked>
-          <InjectChecked>true</InjectChecked>
+          <InjectChecked>false</InjectChecked>
           <Status>Ready</Status>
           <DisplayName>[Util] | SFXUtility (Tracker/Awareness/Activator)</DisplayName>
           <Name>SFXUtility</Name>
@@ -3135,6 +3198,15 @@
           <Name>Shared Experience</Name>
           <Description />
           <SvnUrl>https://github.com/AlphaGodLoL/LeagueSharp</SvnUrl>
+        </LeagueSharpAssembly>
+        <LeagueSharpAssembly>
+          <InstallChecked>true</InstallChecked>
+          <InjectChecked>false</InjectChecked>
+          <Status>Ready</Status>
+          <DisplayName>[Util] | SivirHelper</DisplayName>
+          <Name>SivirHelper</Name>
+          <Description />
+          <SvnUrl>https://github.com/xKurisu/KurisuSolutions</SvnUrl>
         </LeagueSharpAssembly>
         <LeagueSharpAssembly>
           <InstallChecked>true</InstallChecked>
@@ -3198,6 +3270,15 @@
           <Name>UniversalPings</Name>
           <Description />
           <SvnUrl>https://github.com/TheSaltyWaffle/LeagueSharp</SvnUrl>
+        </LeagueSharpAssembly>
+        <LeagueSharpAssembly>
+          <InstallChecked>true</InstallChecked>
+          <InjectChecked>false</InjectChecked>
+          <Status>Ready</Status>
+          <DisplayName>[Util] | Wind-Up Helper</DisplayName>
+          <Name>Wind-Up Helper</Name>
+          <Description />
+          <SvnUrl>https://github.com/SwipeDan/LeagueSharp</SvnUrl>
         </LeagueSharpAssembly>
         <LeagueSharpAssembly>
           <InstallChecked>true</InstallChecked>
@@ -3491,19 +3572,19 @@
           <InstallChecked>true</InstallChecked>
           <InjectChecked>false</InjectChecked>
           <Status>Ready</Status>
-          <DisplayName>Brand - yol0</DisplayName>
-          <Name>yol0Brand</Name>
+          <DisplayName>Caitlyn - Hikigaya</DisplayName>
+          <Name>HikiCarry Caitlyn</Name>
           <Description />
-          <SvnUrl>https://github.com/yol0swag/LeagueSharp</SvnUrl>
+          <SvnUrl>https://github.com/HikigayaAss/LeagueSharp</SvnUrl>
         </LeagueSharpAssembly>
         <LeagueSharpAssembly>
           <InstallChecked>true</InstallChecked>
           <InjectChecked>false</InjectChecked>
           <Status>Ready</Status>
-          <DisplayName>Caitlyn - Hikigaya</DisplayName>
-          <Name>HikiCarry Caitlyn</Name>
+          <DisplayName>Brand - yol0</DisplayName>
+          <Name>yol0Brand</Name>
           <Description />
-          <SvnUrl>https://github.com/HikigayaAss/LeagueSharp</SvnUrl>
+          <SvnUrl>https://github.com/yol0swag/LeagueSharp</SvnUrl>
         </LeagueSharpAssembly>
         <LeagueSharpAssembly>
           <InstallChecked>true</InstallChecked>
@@ -3842,6 +3923,15 @@
           <InstallChecked>true</InstallChecked>
           <InjectChecked>false</InjectChecked>
           <Status>Ready</Status>
+          <DisplayName>Galio - Kortatu (Honda7)</DisplayName>
+          <Name>GalioSharp</Name>
+          <Description />
+          <SvnUrl>https://github.com/TC-Crew/L-Assemblies/</SvnUrl>
+        </LeagueSharpAssembly>
+        <LeagueSharpAssembly>
+          <InstallChecked>true</InstallChecked>
+          <InjectChecked>false</InjectChecked>
+          <Status>Ready</Status>
           <DisplayName>Gangplank - Danz</DisplayName>
           <Name>GangPlank - Yarr!</Name>
           <Description />
@@ -4058,7 +4148,7 @@
           <InstallChecked>true</InstallChecked>
           <InjectChecked>false</InjectChecked>
           <Status>Ready</Status>
-          <DisplayName>Jinx - Asuna</DisplayName>
+          <DisplayName>Jinx - Asuna (Berb)</DisplayName>
           <Name>PennyJinxReborn</Name>
           <Description />
           <SvnUrl>https://github.com/DZ191/LeagueSharp</SvnUrl>
@@ -4103,7 +4193,7 @@
           <InstallChecked>true</InstallChecked>
           <InjectChecked>false</InjectChecked>
           <Status>Ready</Status>
-          <DisplayName>Kalista - jQuery</DisplayName>
+          <DisplayName>Kalista - jQuery (Berb)</DisplayName>
           <Name>ElKalista</Name>
           <Description />
           <SvnUrl>https://github.com/AlterEgojQuery/ElBundle</SvnUrl>
@@ -4440,6 +4530,15 @@
           <Name>DevLulu</Name>
           <Description />
           <SvnUrl>https://github.com/InjectionDev/LeagueSharp</SvnUrl>
+        </LeagueSharpAssembly>
+        <LeagueSharpAssembly>
+          <InstallChecked>true</InstallChecked>
+          <InjectChecked>false</InjectChecked>
+          <Status>Ready</Status>
+          <DisplayName>Lulu - iMeh</DisplayName>
+          <Name>Lulu</Name>
+          <Description />
+          <SvnUrl>https://github.com/Esk0r/LeagueSharp</SvnUrl>
         </LeagueSharpAssembly>
         <LeagueSharpAssembly>
           <InstallChecked>true</InstallChecked>
@@ -4823,7 +4922,7 @@
           <InstallChecked>true</InstallChecked>
           <InjectChecked>false</InjectChecked>
           <Status>Ready</Status>
-          <DisplayName>Riven - Kurisu</DisplayName>
+          <DisplayName>Riven - Kurisu (Berb)</DisplayName>
           <Name>KurisuRiven</Name>
           <Description />
           <SvnUrl>https://github.com/xKurisu/KurisuSolutions</SvnUrl>
@@ -4836,6 +4935,15 @@
           <Name>EloFactory_Riven</Name>
           <Description />
           <SvnUrl>https://github.com/EloFactory/LeagueSharp</SvnUrl>
+        </LeagueSharpAssembly>
+        <LeagueSharpAssembly>
+          <InstallChecked>true</InstallChecked>
+          <InjectChecked>false</InjectChecked>
+          <Status>Ready</Status>
+          <DisplayName>Ryze - Badao</DisplayName>
+          <Name>HeavenStrikeRyze</Name>
+          <Description />
+          <SvnUrl>https://github.com/badao/HeavenStrikeRyze</SvnUrl>
         </LeagueSharpAssembly>
         <LeagueSharpAssembly>
           <InstallChecked>true</InstallChecked>
@@ -4935,6 +5043,15 @@
           <Name>Sion</Name>
           <Description />
           <SvnUrl>https://github.com/TC-Crew/L-Assemblies</SvnUrl>
+        </LeagueSharpAssembly>
+        <LeagueSharpAssembly>
+          <InstallChecked>true</InstallChecked>
+          <InjectChecked>false</InjectChecked>
+          <Status>Ready</Status>
+          <DisplayName>Sivir - GnomexFire</DisplayName>
+          <Name>Sivir Kappa</Name>
+          <Description />
+          <SvnUrl>https://github.com/Gnomexfire/Sharp</SvnUrl>
         </LeagueSharpAssembly>
         <LeagueSharpAssembly>
           <InstallChecked>true</InstallChecked>
@@ -5273,7 +5390,7 @@
           <InstallChecked>true</InstallChecked>
           <InjectChecked>false</InjectChecked>
           <Status>Ready</Status>
-          <DisplayName>Vayne - Asuna</DisplayName>
+          <DisplayName>Vayne - Asuna (Berb)</DisplayName>
           <Name>VayneHunter Reborn</Name>
           <Description />
           <SvnUrl>https://github.com/DZ191/LeagueSharp</SvnUrl>
@@ -5293,6 +5410,15 @@
           <Status>Ready</Status>
           <DisplayName>Vayne - Hikigaya</DisplayName>
           <Name>HikiCarry Vayne</Name>
+          <Description />
+          <SvnUrl>https://github.com/HikigayaAss/LeagueSharp</SvnUrl>
+        </LeagueSharpAssembly>
+        <LeagueSharpAssembly>
+          <InstallChecked>true</InstallChecked>
+          <InjectChecked>false</InjectChecked>
+          <Status>Ready</Status>
+          <DisplayName>Vayne - Hikigaya (MasterRace)</DisplayName>
+          <Name>HikiCarry Vayne Masterrace</Name>
           <Description />
           <SvnUrl>https://github.com/HikigayaAss/LeagueSharp</SvnUrl>
         </LeagueSharpAssembly>
